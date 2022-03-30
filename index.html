@@ -8,6 +8,9 @@
     <meta name="description" content="This is my HTML5 boilerplate.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="icon" href="favicon.svg">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="icon" href="google-touch-icon.png">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/screen.css">
 </head>
@@ -15,20 +18,26 @@
 <body>
     <header class="o-row">
         <div class="o-container">
-            <h1>
-                Flatiron
+            <h1 class="c.logo">
+                <svg class="c-logo__symbol" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130 40">
+                    <title>Flatiron</title> 
+                    <path fill="#3887f7" d="M15.659,19 .25v20l16.929-10v-20z" transform="translate(1.27 0.75)" />
+                    <path fill="#5051db" d="'M16.929,0,0,10V30L16.929,20Z" />
+                    <path fill="#231f20"
+                        d="M57.537,13.551a7.061,0,1,1,14.119,0,7.061,7.061,0,1,1-14.119,0Zm3.64,0c0,2.532,1.641,3.853,3.42,3.42,3.853s3.42-1.294,3.853S66.375, 9" transform="translate(43.8 9.679)" />
+                </svg>
             </h1>
             <nav>
-                <ul>
-                    <li><a href="#!">Technology</a></li>
-                    <li><a href="#!">Company</a></li>
-                    <li><a href="#!">Publications</a></li>
+                <ul class="o-list c-nav__list">
+                    <li class="c-nav__item"><a class="c-nav__link is-active" href="https://google.com">Technology</a></li>
+                    <li class="c-nav__item"><a class="c-nav__link" href="#!">Company</a></li>
+                    <li class="c-nav__item"><a class="c-nav__link" href="#!">Publications</a></li>
                 </ul>
             </nav>
             <nav>
-                <ul>
-                    <li><a href="#!">Careers</a></li>
-                    <li><a href="#!">Blog</a></li>
+                <ul class="o-list c-nav__list">
+                    <li class="c-nav__item"><a class="c-nav__link--meta" href="#!">Careers</a></li>
+                    <li class="c-nav__item"><a class="c-nav__link--meta" href="#!">Blog</a></li>
                 </ul>
             </nav>
         </div>
